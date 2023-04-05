@@ -22,5 +22,8 @@ public class UserController {
 		return"user/loginForm";
 	}
 	// 회원정보 
-	
+	@GetMapping("/user/updateForm")
+	public String updateForm() {
+		return"user/updateForm";
+	}
 }
