@@ -42,7 +42,8 @@ public class UserApiController {
 	   userService.회원가입(user);
 		return new ResponseDto<Integer>(HttpStatus.OK.value(),1); //자바 오브젝트를 JSON으로 변환해서 리턴 (Jackson)
 	}
-	
+
+// 회원수정 
 	@PutMapping("/user")
 	public ResponseDto<Integer>update(@RequestBody User user){ // key=value, x-www-form-urlencoded
 		System.out.println("UserApiController:update호출");

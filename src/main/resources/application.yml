@@ -6,13 +6,16 @@ server:
       charset: UTF-8
       enabled: true
       force: true
+      
+cos:
+   key: cos1234 
     
 spring:
   mvc:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
-      
+         
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3307/blog?serverTimezone=Asia/Seoul
@@ -34,6 +37,7 @@ spring:
     serialization:
       fail-on-empty-beans: false
       
+  
       
       
       
